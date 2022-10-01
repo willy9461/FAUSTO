@@ -43,6 +43,7 @@ nav {
     background: #fd79a8;
     background-size: cover;
     background-position: center;
+    padding: 10px;
 }
 .titulo_productos{
     size: 90px;
@@ -51,5 +52,14 @@ nav {
     bottom: 90%;
     justify-content: center;
     align-items: top;
+
+}
+#fondo_precios{
+    width: 1300px;
+    height: 800px;
+    background: #ffeaa7;
+    background-size: cover;
+    background-position: center;
+    padding: 10px;
 
 }

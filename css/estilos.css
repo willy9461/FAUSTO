@@ -10,3 +10,15 @@ nav {
     background-color: rgb(252, 249, 246);
     box-shadow: 0 3px 5px rgba(0,0,0,0.1);
 }
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#fondo_home{
+    width: 800px;
+    height: 500px;
+    background-image: url(/img/04.jpg);
+
+}

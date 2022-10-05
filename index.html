@@ -5,9 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FAUSTO</title>
+    <script src="https://kit.fontawesome.com/23b464fd77.js" crossorigin="anonymous"></script>
+    <!-- Sweetalert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.33/dist/sweetalert2.all.min.js"></script>
+    <!-- Toastify -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <!-- estilos css -->
     <link rel="stylesheet" href="css/estilos.css">
+
 </head>
-<body>
+<body id="body">
     <header>
         <nav>
             <h1>FAUSTO CERVECERÍA</h1>
@@ -18,9 +25,28 @@
               <li><a href="#nosotros" class="nav-link">Nosotros</a></li>
               <li><a href="#contacto" class="nav-link">Contacto</a></li>
             </ul>
+            <button>
+              <img class="navbar-icon" id="btn-carrito" src="/img/carrito-de-compras.png" alt="icono de carrito">
+               <span id="contador-carrito">0</span> 
+            </button>
+            
             <button class="menu-hamburguesa" id="menu-hamburguesa">
               <ion-icon class="barras" name="menu-outline"></ion-icon>
             </button>
+              <div class="modal-carrito-contenedor" id="modal-carrito-contenedor">
+                  <div class="modal-carrito">
+                      <button class="cerrar-carrito" id="cerrar-carrito">x</button>
+                      <h1>Carrito</h1>
+                      <div id="carrito-contenedor">
+                          
+                      </div>
+                      <p class="precio-producto">Total: $<span id="precio-total">0</span></p>
+                      <button id="vaciar-carrito" class="btn">Vaciar Carrito<i class="fa-solid fa-cart-shopping"></i></button>
+                      <button id="pagar-carrito" class="btn">Pagar</button>
+                  </div>
+          
+              </div>
+            
       </nav>
     </header> 
       <main>
@@ -28,6 +54,7 @@
           <div class="flex-center">
             <div id="fondo_home" class="flex-center">
               <h1 class="titulo_home">HOME</h1>
+
             </div>  
           </div>
         </section>
@@ -35,6 +62,9 @@
           <div class="flex-center">
             <div id="fondo_productos">
               <h1 class="titulo_productos">NUESTROS PRODUCTOS</h1>
+              <div class="contenedor-de-productos" id="contenedor_productos"></div>
+    
+
             </div>
           </div>
         </section>
@@ -50,6 +80,8 @@
       </main>
       <footer>
       </footer>
-    
+   <!--Toastify-->   
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>    
+  <script src="/Js/carrito.js"></script>  
 </body>
 </html>

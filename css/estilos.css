@@ -1,7 +1,9 @@
 *{
     margin: 0;
     padding: 0;
+    
 }
+
 nav {
     position: sticky;
     top: 0;
@@ -63,3 +65,69 @@ nav {
     padding: 10px;
 
 }
+
+
+
+/*iconos del menu*/
+.navbar-icon{
+    width: 20px;
+    height: 20px;
+}
+/*barra de navegacion*/
+.navegacion{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;  
+}
+.nav-link{
+    text-decoration: none;
+}
+/*contenedor de carts de productos*/
+.contenedor-de-productos{
+    display: flex;
+    height: auto;
+    justify-content: space-around;
+}
+.producto{
+    max-width: 20%;
+    padding: 10px;
+    margin: 10px;
+    margin-bottom: 20px;
+    box-shadow: 2px 6px 3px 3px rgba(0, 0, 0, 0.3);
+    height: 40%;
+}
+.cart-img{
+    height: 50%;
+    width: 100%;
+}
+/*estilos para el modal del carrito de compras*/
+.modal-carrito-contenedor{
+    display: none;
+    position: fixed;
+    top: 0%;
+    width: 90%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    opacity: 50;  
+}
+.modal-carrito{
+    width: 60%;
+    background-color: white;
+    float: right;
+    padding: 25px;
+    max-width: 60%;
+    max-height: 80%;
+    margin-top: 8%;
+    margin-right: 2%;
+
+}
+/*boton cerrar carrito*/
+.cerrar-carrito{
+    color: red;
+    float: right;
+    font-weight: bold;
+    font-size: 25px;
+
+}
+

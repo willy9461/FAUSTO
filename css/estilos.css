@@ -84,7 +84,37 @@ nav {
     background-position: center;
     padding: 10px;
 
+
+    
 }
+#fondo_nosotros{
+    width: 1300px;
+    height: 800px;
+    background: #f49d3a;
+    background-size: cover;
+    background-position: center;
+    padding: 10px;
+
+
+    
+}
+
+
+#fondo_contacto{
+    width: 1300px;
+    height: 800px;
+    background: #fd79a8;
+    background-size: cover;
+    background-position: center;
+    padding: 10px;
+    box-sizing: border-box;
+
+
+    
+}
+
+
+
 .titulo_Contacto{
     text-align: center;
     align-items: center;

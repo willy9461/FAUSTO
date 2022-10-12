@@ -8,6 +8,8 @@
     <script src="https://kit.fontawesome.com/23b464fd77.js" crossorigin="anonymous"></script>
     <!-- Sweetalert -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.33/dist/sweetalert2.all.min.js"></script>
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
     <!-- Toastify -->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <!-- estilos css -->
@@ -15,24 +17,30 @@
 
 </head>
 <body id="body">
-    <header>
-        <nav>
+    <header class="nav-contenedor" >
+        <nav class="div-nav">
             <h1>FAUSTO CERVECERÍA</h1>
-            <ul class="navegacion">
+            <div class="div-lista">
+              <ul class="navegacion">
               <li><a href="#home" class="nav-link">Home</a></li>
-              <li><a href="#productos" class="nav-link">Productos</a></li>
-              <li><a href="#precios" class="nav-link">Precios</a></li>
-              <li><a href="#nosotros" class="nav-link">Nosotros</a></li>
-              <li><a href="#contacto" class="nav-link">Contacto</a></li>
-            </ul>
-            <button>
-              <img class="navbar-icon" id="btn-carrito" src="/img/carrito-de-compras.png" alt="icono de carrito">
-               <span id="contador-carrito">0</span> 
-            </button>
+              <li><a href="#productos" class="nav-a">Productos</a></li>
+              <li><a href="#precios" class="nav-a">Precios</a></li>
+              <li><a href="#nosotros" class="nav-a">Nosotros</a></li>
+              <li><a href="#contacto" class="nav-a">Contacto</a></li>
+              </ul>
+            </div>
+            <div>
+              <button class="btn-carrito">
+                <img class="navbar-icon" id="btn-carrito" src="/img/carrito-de-compras.png" alt="icono de carrito">
+                <span id="contador-carrito">0</span> 
+              </button>
             
-            <button class="menu-hamburguesa" id="menu-hamburguesa">
-              <ion-icon class="barras" name="menu-outline"></ion-icon>
-            </button>
+              <button class="menu-hamburguesa" id="menu-hamburguesa">
+                <ion-icon class="barras" name="menu-outline"></ion-icon>
+              </button> 
+            </div>
+
+            
               <div class="modal-carrito-contenedor" id="modal-carrito-contenedor">
                   <div class="modal-carrito">
                       <button class="cerrar-carrito" id="cerrar-carrito">x</button>
@@ -41,8 +49,8 @@
                           
                       </div>
                       <p class="precio-producto">Total: $<span id="precio-total">0</span></p>
-                      <button id="vaciar-carrito" class="btn">Vaciar Carrito<i class="fa-solid fa-cart-shopping"></i></button>
-                      <button id="pagar-carrito" class="btn">Pagar</button>
+                      <button id="vaciar-carrito" class="btn-vaciar">Vaciar Carrito<i class="fa-solid fa-cart-shopping"></i></button>
+                      <button id="pagar-carrito" class="btn-pagar">Pagar</button>
                   </div>
           
               </div>
@@ -53,8 +61,29 @@
         <section class="home">
           <div class="flex-center">
             <div id="fondo_home" class="flex-center">
-              <h1 class="titulo_home">HOME</h1>
-
+              <div>
+                <h1 class="titulo_home">HOME</h1>
+              </div>
+              <!--carousel -->
+              <div class="carousel-contenedor" >
+                <div class="carousel" id="carousel">
+                    <div class="seccion-carousel">
+                        <img src="/img/carousel/img-1.jpeg" class="img-carousel" alt="">
+                    </div>
+                    <div class="seccion-carousel">
+                        <img src="/img/carousel/img-2.jpg" class="img-carousel" alt="">
+                    </div>
+                    <div class="seccion-carousel">
+                        <img src="/img/carousel/img-3.jpeg" class="img-carousel" alt="">
+                    </div>
+                    <div class="seccion-carousel">
+                        <img src="/img/carousel/img-4.jpeg" class="img-carousel" alt="">
+                    </div>
+                </div>
+                <!--botones de carousel-->
+                <div class="btn-carousel btn-derecho" id="btn-derecho">></div>
+                <div class="btn-carousel btn-izquierdo" id="btn-izquierdo"><</div>
+              </div>
             </div>  
           </div>
         </section>
@@ -76,12 +105,59 @@
           </div>
         </section>
         <section class="nosotros"></section>
-        <section class="contacto"></section>
+        <section class="contacto">
+          <!--Formulario de contacto-->
+            <div class="container div-cont-form">
+              <h1 class="titulo_Contacto">Contacto</h1>
+              <form class="row g-3 needs-validation" novalidate>
+                  <div class="col-md-3 position-relative">
+                      <label for="validationTooltip01" class="form-label">Nombre</label>
+                      <input type="text" class="form-control" id="validationTooltip01"  placeholder="Ingrese Nombre" required>
+                      <div class="valid-tooltip">
+                          Looks good!
+                      </div>
+                  </div>
+                  <div class="col-md-3 position-relative">
+                      <label for="validationTooltip02" class="form-label">Apellido</label>
+                      <input type="text" class="form-control" id="validationTooltip02"  placeholder="Ingrese Apellido" required>
+                      <div class="valid-tooltip">
+                          Looks good!
+                      </div>
+                  </div>
+                  <div class="col-md-3 position-relative">
+                      <label for="validationTooltip02" class="form-label">Telefono</label>
+                      <input type="text" class="form-control" id="validationTooltip02"  placeholder="Ingrese telefono" required>
+                      <div class="valid-tooltip">
+                          Looks good!
+                      </div>
+                  </div>
+                  <div class="col-md-6">
+                      <label for="exampleInputEmail1" class="form-label">Email</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="nombre@ejemplo.com">
+                      <div id="emailHelp" class="form-text">Nunca compartiremos su correo electrónico con nadie más.</div>
+                    </div>
+
+              
+                  <div class="form-floating">
+                      <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                      <label for="floatingTextarea2">Consulta</label>
+                  </div>
+          
+                  <div class="col-12">
+                      <button class="btn btn-primary" type="submit">Enviar</button>
+                  </div>
+              </form>
+          </div>
+        </section>
       </main>
       <footer>
       </footer>
-   <!--Toastify-->   
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>    
+  <!--bootstrap-->
+  <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <!--Toastify-->   
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script> 
+  <script src="/Js/carousel.js"></script>   
   <script src="/Js/carrito.js"></script>  
 </body>
 </html>

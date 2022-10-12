@@ -3,6 +3,22 @@
     padding: 0;
     
 }
+.nav-contenedor{
+    display:grid;
+    top:0;
+    width:100%;
+    position: fixed;
+    z-index: 1;
+   
+}
+.div-lista{
+    width: 60%;
+}
+.navegacion{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly; 
+}
 
 nav {
     position: sticky;
@@ -15,6 +31,7 @@ nav {
     padding: 1.5rem 3.5rem;
     background-color: rgb(252, 249, 246);
     box-shadow: 0 3px 5px rgba(0,0,0,0.1);
+    box-sizing: border-box;
 }
 .flex-center{
     padding: 10px;
@@ -24,12 +41,13 @@ nav {
 
 }
 #fondo_home{
+    padding-top: 7%;
     width: 1300px;
     height: 800px;
     background: #81ecec;
     background-size: cover;
     background-position: center;
-   
+    display: inline-block;
 
 }
 
@@ -38,6 +56,7 @@ nav {
     color: rgb(255, 34, 0);
     position: top;
     bottom: 90%;
+    
 }
 #fondo_productos{
     width: 1300px;
@@ -46,6 +65,7 @@ nav {
     background-size: cover;
     background-position: center;
     padding: 10px;
+    box-sizing: border-box;
 }
 .titulo_productos{
     size: 90px;
@@ -65,6 +85,10 @@ nav {
     padding: 10px;
 
 }
+.titulo_Contacto{
+    text-align: center;
+    align-items: center;
+}
 
 
 
@@ -79,7 +103,7 @@ nav {
     display: flex;
     justify-content: space-evenly;  
 }
-.nav-link{
+.nav-a{
     text-decoration: none;
 }
 /*contenedor de carts de productos*/
@@ -99,6 +123,16 @@ nav {
 .cart-img{
     height: 50%;
     width: 100%;
+}
+.btn-agregar{
+    background-color: white;
+    color: black;
+    border: 2px solid #4CAF50; 
+    transition-duration: 0.4s;
+}
+.btn-agregar:hover{
+    background-color: #4CAF50; 
+    color: white;
 }
 /*estilos para el modal del carrito de compras*/
 .modal-carrito-contenedor{
@@ -120,14 +154,119 @@ nav {
     max-height: 80%;
     margin-top: 8%;
     margin-right: 2%;
-
 }
-/*boton cerrar carrito*/
+.carrito-contenedor{
+    display:grid; 
+}
+.fila-carrito{
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    text-align:end;
+}
+/*Botones del carrito de compras*/
 .cerrar-carrito{
     color: red;
     float: right;
     font-weight: bold;
     font-size: 25px;
-
+}
+.btn-carrito{
+    border-radius: 50px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+}
+.btn-vaciar{
+    background-color: white;
+    color: black;
+    border: 2px solid #008CBA; 
+    transition-duration: 0.4s;
+}
+.btn-vaciar:hover{
+    background-color: #008CBA; 
+    color: white;
+}
+.btn-pagar{
+    background-color: white;
+    color: black;
+    border: 2px solid #4CAF50; 
+    transition-duration: 0.4s;
+}
+.btn-pagar:hover{
+    background-color: #4CAF50; 
+    color: white;
+}
+.btn-eliminar{
+    background-color: white;
+    color: black;
+    border: 2px solid #f44336; 
+    transition-duration: 0.4s; 
+}
+.btn-eliminar:hover{
+    background-color: #f44336; 
+    color: white;
 }
 
+
+/*estilos de carousel*/
+.carousel-contenedor{
+    width: 100%;
+    max-width: 1400px;
+    margin: auto;
+   overflow: hidden;
+    position: relative;
+}
+
+.carousel{
+    display: flex;
+    width: 400%;
+    height: 600px;
+    margin-left: -100%;
+    
+}
+.seccion-carousel{
+    width: 100%;
+}
+
+.img-carousel{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.btn-carousel{
+    font-size: 30px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    font-weight: bold;
+    font-family: monospace;
+    position: absolute;
+    color: #fff;
+    box-shadow: 0 0 10px rgba(255, 555, 255, 0.5);
+    -webkit-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    transition: all .4s ease;
+    top: 40%;
+}
+
+.btn-carousel:hover{
+    cursor: pointer;
+    transform: scale(1.2,1.2);
+}
+.btn-derecho{
+    right: 15px;
+}
+.btn-izquierdo{
+    left: 15px;
+}
+
+/*estilos de formulario de contacto*/
+.div-cont-form{
+    margin: auto;
+    padding: 20px;
+    box-shadow: 2px 6px 3px 3px rgba(0, 0, 0, 0.3);
+}

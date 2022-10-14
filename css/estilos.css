@@ -113,6 +113,7 @@ nav {
 .titulo_seccion{
     text-align: center;
     align-items: center;
+    font-weight: bold;
 }
 
 /*iconos del menu*/
@@ -144,6 +145,35 @@ nav {
     width: 40px;
     height: 40px;
 }
+
+/*contenedor de botones de seccion productos*/
+.img-menu-productos{
+    width: 100px;
+    height: 100px;
+}
+.menu-productos{
+    width: 100%;
+    justify-content: space-around;
+    display: flex;
+
+}
+.btn-menu{
+    padding: 20px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    transition-duration: 0.5s;
+    transition: all .4s ease;
+    
+}
+.btn-menu:hover{
+    cursor: pointer;
+    transform: scale(1.2,1.2);
+}
+.btn-menu h5{
+    margin: 10px;
+}
+
+
 
 /*contenedor de carts de productos*/
 .contenedor-de-productos{

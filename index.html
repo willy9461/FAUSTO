@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FAUSTO</title>
-  <link rel="icon" href="/img/icono.jpg">
+  <link rel="icon" href="/img/icono (1).png">
   <script src="https://kit.fontawesome.com/23b464fd77.js" crossorigin="anonymous"></script>
   <!-- Sweetalert -->
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.33/dist/sweetalert2.all.min.js"></script>
@@ -20,27 +20,27 @@
 </head>
 
 <body id="body">
-    <header class="nav-contenedor" >
-        <nav class="div-nav">
-            <h1>FAUSTO CERVECERÍA</h1>
-            <div class="div-lista">
-              <ul class="navegacion">
-                <li><a href="#home" class="nav-a">Home</a></li>
-                <li><a href="#productos" class="nav-a">Productos</a></li>
-                <li><a href="#precios" class="nav-a">Precios</a></li>
-                <li><a href="#nosotros" class="nav-a">Nosotros</a></li>
-                <li><a href="#contacto" class="nav-a">Contacto</a></li>
-              </ul>
-            </div>
-            <div>
-              <button class="btn-carrito">
-                <img class="navbar-icon" id="btn-carrito" src="/img/carrito-de-compras.png" alt="icono de carrito">
-                <span id="contador-carrito">0</span> 
-              </button>            
-              <button class="menu-hamburguesa" id="menu-hamburguesa">
-                <img class="icon-menu-hamb" id="btn-carrito" src="/img/menu.png" alt="menu hamburgesa">
-              </button> 
-            </div>
+  <header class="nav-contenedor">
+    <nav class="div-nav">
+      <h1>FAUSTO CERVECERÍA</h1>
+      <div class="div-lista">
+        <ul class="navegacion">
+          <li><a href="#home" class="nav-a">Home</a></li>
+          <li><a href="#productos" class="nav-a">Productos</a></li>
+          <li><a href="#precios" class="nav-a">Precios</a></li>
+          <li><a href="#nosotros" class="nav-a">Nosotros</a></li>
+          <li><a href="#contacto" class="nav-a">Contacto</a></li>
+        </ul>
+      </div>
+      <div>
+        <button class="btn-carrito">
+          <img class="navbar-icon" id="btn-carrito" src="/img/carrito-de-compras.png" alt="icono de carrito">
+          <span id="contador-carrito">0</span>
+        </button>
+        <button class="menu-hamburguesa" id="menu-hamburguesa">
+          <img class="icon-menu-hamb" id="btn-carrito" src="/img/menu.png" alt="menu hamburgesa">
+        </button>
+      </div>
       <div class="modal-carrito-contenedor" id="modal-carrito-contenedor">
         <div class="modal-carrito">
           <button class="cerrar-carrito" id="cerrar-carrito">x</button>
@@ -60,61 +60,62 @@
       <div class="flex-center">
         <div id="fondo_home" class="flex-center">
           <div>
-            <h1 class="titulo_seccion" id="home">HOME</h1>
+            <h1 class="titulo_seccion">HOME</h1>
           </div>
           <!--carousel -->
           <div class="carousel-contenedor">
             <div class="carousel" id="carousel">
               <div class="seccion-carousel">
-                <img src="img/carousel/img-1.jpeg" class="img-carousel" alt="">
+                <img src="img/carousel/cervezas1.jpg" class="img-carousel" alt="">
               </div>
               <div class="seccion-carousel">
                 <img src="/img/carousel/img-2.jpg" class="img-carousel" alt="">
               </div>
               <div class="seccion-carousel">
-                <img src="/img/carousel/img-3.jpeg" class="img-carousel" alt="">
+                <img src="/img/carousel/hamburguesa1.jpg" class="img-carousel" alt="">
               </div>
               <div class="seccion-carousel">
-                <img src="/img/carousel/img-4.jpeg" class="img-carousel" alt="">
+                <img src="/img/carousel/hamburguesa2.jpg" class="img-carousel" alt="">
               </div>
             </div>
             <!--botones de carousel-->
             <div class="btn-carousel btn-derecho" id="btn-derecho">></div>
-            <div class="btn-carousel btn-izquierdo" id="btn-izquierdo"><</div>
+            <div class="btn-carousel btn-izquierdo" id="btn-izquierdo">
+              < 
+            </div>
           </div>
-        </div>
     </section>
-    <section class="productos" id="productos">
+    <section class="productos">
       <div class="flex-center">
         <div id="fondo_productos">
           <h1 class="titulo_seccion">NUESTROS PRODUCTOS</h1>
           <div class="menu-productos">
             <button class="btn-menu btn-para-picar" id="btn_para_picar">
-                <img class="img-menu-productos" src="/img/productos/papas-fritas.png" alt="">
-                <h5>Para Picar</h5>
+              <img class="img-menu-productos" src="/img/productos/papas-fritas.png" alt="">
+              <h5>Para Picar</h5>
             </button>
             <button class="btn-menu btn-panchos" id="btn_panchos">
-                <img class="img-menu-productos" src="/img/productos/pancho.png" alt="">
-                <h5>Panchos</h5>
+              <img class="img-menu-productos" src="/img/productos/pancho.png" alt="">
+              <h5>Panchos</h5>
             </button>
             <button class="btn-menu btn-milanesas" id="btn_milanesas">
-                <img class="img-menu-productos" src="/img/productos/milanesa (1).png" alt="">
-                <h5>Milanesas</h5>
+              <img class="img-menu-productos" src="/img/productos/milanesa (1).png" alt="">
+              <h5>Milanesas</h5>
             </button>
             <button class="btn-menu btn-hamburgesas" id="btn_hamburgesas">
-                <img class="img-menu-productos" src="/img/productos/hamburguesa.png" alt="">
-                <h5>Hamburguesas</h5>
+              <img class="img-menu-productos" src="/img/productos/hamburguesa.png" alt="">
+              <h5>Hamburguesas</h5>
             </button>
             <button class="btn-menu btn-bebidas" id="btn_bebidas">
-                <img class="img-menu-productos" src="/img/productos/refresco.png" alt="">
-                <h5>Bebidas</h5>
+              <img class="img-menu-productos" src="/img/productos/refresco.png" alt="">
+              <h5>Bebidas</h5>
             </button>
-        </div>
+          </div>
           <div class="contenedor-de-productos" id="contenedor_productos"></div>
         </div>
       </div>
     </section>
-    <section class="precios" id="precios">
+    <section class="precios">
       <div class="flex-center">
         <div id="fondo_precios">
           <h1 class="titulo_seccion">NUESTROS PRECIOS</h1>
@@ -123,116 +124,126 @@
         </div>
       </div>
     </section>
-    <section class="nosotros" id="nosotros">
+    <section class="nosotros">
       <div class="flex-center">
         <div id="fondo_nosotros">
-          <h1 class="titulo_seccion">Nosotros</h1>
-          <p>Fausto es una Hamburgeseria que nació como Cervecería en el año ...</p>
+          <h1 class="titulo_seccion">NOSOTROS</h1>
+          <p> <b>Fausto es una hamburguesería que nació en el año 2018, ubicada en pleno Palermo Hollywood.
+            <br>
+            En Fausto nos preocupamos por ofrecerte una excelente propuesta, poniendo el foco en la abundancia de la
+            comida y que puedas disfrutar de una gran variedad de cervezas artesanales de la mejor calidad. </b>
+            <br><br>
+            .</p>
         </div>
       </div>
     </section>
-    <section class="contacto" id="contacto">
+    <section class="contacto">
       <!--Formulario de contacto-->
       <div class="div-cont-form">
         <div id="fondo_contacto">
           <h1 class="titulo_seccion">Contacto</h1>
           <div class="container div-cont-form" id="formulario">
             <form class="row g-3 needs-validation" novalidate>
-                <div class="col-md-3 position-relative">
-                    <label for="validationTooltip01" class="form-label">Nombre</label>
-                    <input type="text" class="form-control" id="validationTooltip01"  placeholder="Ingrese Nombre" required>
-                    <div class="valid-tooltip">
-                      Looks good!
-                    </div>
+              <div class="col-md-3 position-relative">
+                <label for="validationTooltip01" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="validationTooltip01" placeholder="Ingrese Nombre" required>
+                <div class="valid-tooltip">
+                  Looks good!
                 </div>
-                <div class="col-md-3 position-relative">
-                    <label for="validationTooltip02" class="form-label">Apellido</label>
-                    <input type="text" class="form-control" id="validationTooltip02"  placeholder="Ingrese Apellido" required>
-                    <div class="valid-tooltip">
-                      Looks good!
-                    </div>
+              </div>
+              <div class="col-md-3 position-relative">
+                <label for="validationTooltip02" class="form-label">Apellido</label>
+                <input type="text" class="form-control" id="validationTooltip02" placeholder="Ingrese Apellido"
+                  required>
+                <div class="valid-tooltip">
+                  Looks good!
                 </div>
-                <div class="col-md-3 position-relative">
-                    <label for="validationTooltip02" class="form-label">Telefono</label>
-                    <input type="text" class="form-control" id="validationTooltip02"  placeholder="Ingrese telefono" required>
-                    <div class="valid-tooltip">
-                      Looks good!
-                    </div>
+              </div>
+              <div class="col-md-3 position-relative">
+                <label for="validationTooltip02" class="form-label">Telefono</label>
+                <input type="text" class="form-control" id="validationTooltip02" placeholder="Ingrese telefono"
+                  required>
+                <div class="valid-tooltip">
+                  Looks good!
                 </div>
-                <div class="col-md-6">
-                    <label for="exampleInputEmail1" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="nombre@ejemplo.com">
-                    <div id="emailHelp" class="form-text">Nunca compartiremos su correo electrónico con nadie más.</div>
-                  </div>
-  
-                  
-                <div class="form-floating">
-                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
-                    <label for="floatingTextarea2">Consulta</label>
-                </div>
-              
-                <div class="col-12">
-                    <button class="btn btn-primary" type="submit">Enviar</button>
-                </div>
+              </div>
+              <div class="col-md-6">
+                <label for="exampleInputEmail1" class="form-label">Email</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                  placeholder="nombre@ejemplo.com">
+                <div id="emailHelp" class="form-text">Nunca compartiremos su correo electrónico con nadie más.</div>
+              </div>
+
+
+              <div class="form-floating">
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                  style="height: 100px"></textarea>
+                <label for="floatingTextarea2">Consulta</label>
+              </div>
+
+              <div class="col-12">
+                <button class="btn btn-primary" type="submit">Enviar</button>
+              </div>
             </form>
           </div>
 
-      </div>
+        </div>
     </section>
   </main>
   <!--Footer-->
   <footer>
     <div class="contenedor-de-todo-los-elementos">
       <div class="contenedor-footer">
-          <div class="columna-1">
-            <h3>Mas información</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, amet.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta iure fugiat mollitia voluptatem nostrum.</p>
+        <div class="columna-1">
+          <h3>Mas informacion</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, amet.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta iure fugiat mollitia voluptatem nostrum.
+          </p>
+        </div>
+        <div class="columna-2">
+          <h3>Redes Sociales</h3>
+          <div class="fila">
+            <a href="https://www.facebook.com/faustocerveceria/" target="_blank">
+              <img src="img/footer/facebook.png" class="iconos-redes" alt="">
+            </a>
+            <p>Seguinos en facebook</p>
           </div>
-          <div class="columna-2">
-            <h3>Redes Sociales</h3>
-            <div class="fila">
-              <a href="https://www.facebook.com/faustocerveceria/" target="_blank">
-                <img src="img/footer/facebook.png" class="iconos-redes" alt="">
-              </a>
-              <p>Siguenos en facebook</p>
-            </div>
-            <div class="fila">
-              <a href="https://www.instagram.com/faustocerveceria/?hl=es" target="_blank">
-                <img src="img/footer/instagram.png" class="iconos-redes" alt="" >
-              </a>
-              <p>Siguenos en instagram</p>
-            </div>
-            <div class="fila">
-              <a href="https://twitter.com/" target="_blank">
-                <img src="img/footer/twitter.png" class="iconos-redes" alt="">
-              </a>
-              <p>Siguenos en twitter</p>
-            </div>
+          <div class="fila">
+            <a href="https://www.instagram.com/faustocerveceria/?hl=es" target="_blank">
+              <img src="img/footer/instagram.png" class="iconos-redes" alt="">
+            </a>
+            <p>Seguinos en instagram</p>
           </div>
-          <div class="columna-3">
-            <h3>Información Contacto</h3>
-            <div class="fila-2">
-              <img src="img/footer/hogar.png" class="iconos-datos" alt="">
-              <p>HONDURAS 5715 - CABA</p>
-            </div>
-            <div class="fila-2">
-              <img src="img/footer/telefono.png" class="iconos-datos" alt="">
-              <p> 011 3197-3679</p>
-            </div>
-            <div class="fila-2">
-              <img src="img/footer/correo.png" class="iconos-datos" alt="">
-              <p class="mail">fausto.cerveceriaartesanal@gmail.com</p>
-            </div>
+          <div class="fila">
+            <a href="https://twitter.com/" target="_blank">
+              <img src="img/footer/twitter.png" class="iconos-redes" alt="">
+            </a>
+            <p>Seguinos en twitter</p>
+          </div>
+        </div>
+        <div class="columna-3">
+          <h3>Información Contacto</h3>
+          <div class="fila-2">
+            <img src="img/footer/hogar.png" class="iconos-datos" alt="">
+            <p>HONDURAS 5715 - CABA</p>
+          </div>
+          <div class="fila-2">
+            <img src="img/footer/telefono.png" class="iconos-datos" alt="">
+            <p> 011 3197-3679</p>
+          </div>
+          <div class="fila-2">
+            <img src="img/footer/correo.png" class="iconos-datos" alt="">
+            <p class="mail">fausto.cerveceriaartesanal@gmail.com</p>
+          </div>
 
-          </div>
+        </div>
       </div>
 
     </div>
     <div class="contenedor-pie">
       <div class="pie">
         <small>&copy; 2022 <b>"..Aylen - Guille - Diego.."</b> -- Todos los Derechos Reservados. </small>
-        <p>Información Compañía | Privacidad y políticas | Términos y Condiciones</p>
+        <p>Información Compañía | Privación y política | Términos y condiciones</p>
       </div>
     </div>
   </footer>

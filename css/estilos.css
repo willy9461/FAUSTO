@@ -1,31 +1,33 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-    
+
 }
-.nav-contenedor{
-    display:grid;
-    top:0;
-    width:100%;
+
+.nav-contenedor {
+    display: grid;
+    top: 0;
+    width: 100%;
     position: fixed;
     z-index: 1;
 
-   
+
 }
-.div-lista{
+
+.div-lista {
     width: 50%;
     height: 50%;
     margin-bottom: 0;
     text-align: center;
 }
 
-.navegacion{
+.navegacion {
     list-style-type: none;
     display: flex;
     justify-content: space-evenly;
-    margin-bottom: 0; 
-    
+    margin-bottom: 0;
+
 }
 
 
@@ -38,19 +40,21 @@ nav {
     align-items: center;
     justify-content: space-between;
     padding: 1.5rem 3.5rem;
-    background: rgb(0,0,0);
-    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(71,70,70,1) 64%, rgba(91,91,91,1) 100%);
-    box-shadow: 0 3px 5px rgba(0,0,0,0.1);
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(71, 70, 70, 1) 64%, rgba(91, 91, 91, 1) 100%);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
     box-sizing: border-box;
 }
-.flex-center{
+
+.flex-center {
     padding: 10px;
     display: flex;
     justify-content: center;
     align-items: top;
 
 }
-#fondo_home{
+
+#fondo_home {
     padding-top: 7%;
     width: 100%;
     height: 800px;
@@ -58,17 +62,19 @@ nav {
     background-size: cover;
     background-position: center;
     display: inline-block;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(91, 91, 91, 1) 100%);
 
 }
 
-.titulo_home{
+.titulo_home {
     size: 90px;
     color: rgb(255, 34, 0);
     position: top;
     bottom: 90%;
-    
+
 }
-#fondo_productos{
+
+#fondo_productos {
     width: 100%;
     height: 800px;
     background: #fd79a8;
@@ -76,8 +82,10 @@ nav {
     background-position: center;
     padding: 10px;
     box-sizing: border-box;
+    background-image: url(/img/fondos/canillas.jpg);
 }
-.titulo_productos{
+
+.titulo_productos {
     size: 90px;
     color: rgb(255, 34, 0);
     position: top;
@@ -85,126 +93,162 @@ nav {
     justify-content: center;
     align-items: top;
 }
-#fondo_precios{
+
+#fondo_precios {
     width: 100%;
     height: 800px;
     background: #ffeaa7;
     background-size: cover;
     background-position: center;
-    padding: 10px;   
+    padding: 10px;
+    background-image: url(/img/hamburguesa\ 2.jpg);
 }
-#fondo_nosotros{
+
+#fondo_nosotros {
     width: 100%;
     height: 800px;
     background: #f49d3a;
+    background-image: url(/img/fondos/local.webp);
     background-size: cover;
     background-position: center;
-    padding: 10px;  
+    padding: 10px;
 }
-#fondo_contacto{
+
+#fondo_contacto {
     width: 100%;
     height: 500px;
     background: #fd79a8;
     background-size: cover;
     background-position: center;
     padding: 10px;
-    box-sizing: border-box;   
+    box-sizing: border-box;
+    background-image: url(/img/fondos/canillas.jpg)
 }
-.titulo_seccion{
+
+.titulo_seccion {
     text-align: center;
     align-items: center;
     font-weight: bold;
+    padding-top: 50px;
+    margin-top: 50px;
+}
+
+
+
+p {
+    color: white;
+    text-align: center;
+}
+
+.nosotros {
+    color: white;
 }
 
 /*iconos del menu*/
-.navbar-icon{
+.navbar-icon {
     width: 25px;
     height: 25px;
 }
+
 /*barra de navegacion*/
-.div-nav h1{
+.div-nav h1 {
     font-weight: bold;
-    color:  #a7a5a5;
+    color: #a7a5a5;
 }
-.navegacion{
+
+.navegacion {
     list-style-type: none;
     display: flex;
-    justify-content: space-evenly;  
+    justify-content: space-evenly;
 }
-.nav-a{
+
+.nav-a {
     text-decoration: none;
     color: rgb(214, 210, 210);
-    
+
 }
-.menu-hamburguesa{
+
+.menu-hamburguesa {
     border-radius: 50px;
     border: none;
     background-color: rgba(0, 0, 0, 0);
-} 
-.icon-menu-hamb{
+}
+
+.icon-menu-hamb {
     width: 40px;
     height: 40px;
 }
 
 /*contenedor de botones de seccion productos*/
-.img-menu-productos{
+.img-menu-productos {
     width: 100px;
     height: 100px;
 }
-.menu-productos{
+
+.menu-productos {
     width: 100%;
     justify-content: space-around;
     display: flex;
 
 }
-.btn-menu{
+
+.btn-menu {
     padding: 20px;
     border: none;
     background-color: rgba(0, 0, 0, 0);
     transition-duration: 0.5s;
     transition: all .4s ease;
-    
+
 }
-.btn-menu:hover{
+
+.btn-menu:hover {
     cursor: pointer;
-    transform: scale(1.2,1.2);
+    transform: scale(1.2, 1.2);
 }
-.btn-menu h5{
+
+.btn-menu h5 {
     margin: 10px;
+    color: whitesmoke;
 }
 
 
 
 /*contenedor de carts de productos*/
-.contenedor-de-productos{
+.contenedor-de-productos {
     display: flex;
     height: auto;
     justify-content: space-around;
 }
-.producto{
+
+.producto {
     max-width: 20%;
     padding: 10px;
     margin: 10px;
     margin-bottom: 20px;
     box-shadow: 2px 6px 3px 3px rgba(0, 0, 0, 0.3);
     height: 40%;
+    color: whitesmoke;
 }
-.cart-img{
+
+.cart-img {
     height: 50%;
     width: 100%;
 }
-.btn-agregar{
+
+.btn-agregar {
     background-color: white;
     color: black;
-    border: 2px solid #4CAF50; 
+    border: 2px solid #4CAF50;
     transition-duration: 0.4s;
 }
-.btn-agregar:hover{
-    background-color: #4CAF50; 
+
+.btn-agregar:hover {
+    background-color: #4CAF50;
     color: white;
 }
+
 /*estilos para el modal del carrito de compras*/
-.modal-carrito-contenedor{
+.modal-carrito-contenedor {
     display: none;
     position: fixed;
     top: 0%;
@@ -212,9 +256,10 @@ nav {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.2);
     z-index: 10;
-    opacity: 50;  
+    opacity: 50;
 }
-.modal-carrito{
+
+.modal-carrito {
     width: 60%;
     background-color: white;
     float: right;
@@ -224,89 +269,102 @@ nav {
     margin-top: 8%;
     margin-right: 2%;
 }
-.carrito-contenedor{
-    display:grid; 
+
+.carrito-contenedor {
+    display: grid;
 }
-.fila-carrito{
+
+.fila-carrito {
     padding: 5px;
     display: flex;
     justify-content: space-between;
-    text-align:end;
+    text-align: end;
 }
+
 /*Botones del carrito de compras*/
-.cerrar-carrito{
+.cerrar-carrito {
     color: red;
     float: right;
     font-weight: bold;
     font-size: 25px;
 }
-.btn-carrito{
+
+.btn-carrito {
     border-radius: 50px;
     border: none;
     background-color: rgba(0, 0, 0, 0);
 }
-.btn-carrito span{
+
+.btn-carrito span {
     color: #DFDBDB;
 }
-.btn-vaciar{
+
+.btn-vaciar {
     background-color: white;
     color: black;
-    border: 2px solid #008CBA; 
+    border: 2px solid #008CBA;
     transition-duration: 0.4s;
 }
-.btn-vaciar:hover{
-    background-color: #008CBA; 
+
+.btn-vaciar:hover {
+    background-color: #008CBA;
     color: white;
 }
-.btn-pagar{
+
+.btn-pagar {
     background-color: white;
     color: black;
-    border: 2px solid #4CAF50; 
+    border: 2px solid #4CAF50;
     transition-duration: 0.4s;
 }
-.btn-pagar:hover{
-    background-color: #4CAF50; 
+
+.btn-pagar:hover {
+    background-color: #4CAF50;
     color: white;
 }
-.btn-eliminar{
+
+.btn-eliminar {
     background-color: white;
     color: black;
-    border: 2px solid #f44336; 
-    transition-duration: 0.4s; 
+    border: 2px solid #f44336;
+    transition-duration: 0.4s;
 }
-.btn-eliminar:hover{
-    background-color: #f44336; 
+
+.btn-eliminar:hover {
+    background-color: #f44336;
     color: white;
 }
 
 
 /*estilos de carousel*/
-.carousel-contenedor{
+.carousel-contenedor {
     width: 100%;
     max-width: 1400px;
     margin: auto;
-   overflow: hidden;
+    overflow: hidden;
     position: relative;
 }
 
-.carousel{
+.carousel {
     display: flex;
     width: 400%;
     height: 600px;
     margin-left: -100%;
-    
+
 }
-.seccion-carousel{
+
+.seccion-carousel {
     width: 100%;
 }
 
-.img-carousel{
+.img-carousel {
     display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.btn-carousel{
+
+.btn-carousel {
     font-size: 30px;
     width: 60px;
     height: 60px;
@@ -325,115 +383,137 @@ nav {
     top: 40%;
 }
 
-.btn-carousel:hover{
+.btn-carousel:hover {
     cursor: pointer;
-    transform: scale(1.2,1.2);
+    transform: scale(1.2, 1.2);
 }
-.btn-derecho{
+
+.btn-derecho {
     right: 15px;
 }
-.btn-izquierdo{
+
+.btn-izquierdo {
     left: 15px;
 }
 
 /*estilos de formulario de contacto*/
-.div-cont-form{
+.div-cont-form {
     margin: auto;
     padding: 10px;
     box-shadow: 2px 6px 3px 3px rgba(0, 0, 0, 0.3);
+    background-color: rgb(128, 127, 127);
 }
 
 /*estilos del footer*/
 
-.iconos-redes{
+.iconos-redes {
     width: 40px;
     height: 40px;
 }
-.iconos-datos{
+
+.iconos-datos {
     width: 40px;
     height: 40px;
 }
-footer{
+
+footer {
     width: 100%;
-    background: rgb(0,0,0);
-    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(91,91,91,1) 100%); 
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(91, 91, 91, 1) 100%);
     color: rgb(209, 206, 206);
 }
-.contenedor-de-todo-los-elementos{
+
+.contenedor-de-todo-los-elementos {
     width: 100%;
     max-width: 1400px;
     margin: auto;
     padding: 40px;
 }
-.contenedor-footer{ 
+
+.contenedor-footer {
     display: flex;
     justify-content: space-between;
 }
-.columna-1{
+
+.columna-1 {
     max-width: 400px;
 }
-.columna-1 h3{
+
+.columna-1 h3 {
     font-size: 22px;
     font-weight: bold;
     color: rgb(255, 255, 255);
 }
-.columna-1 p{
+
+.columna-1 p {
     font-size: 15px;
     margin-top: 20px;
     margin-bottom: 0%;
 }
-.columna-2{
+
+.columna-2 {
     max-width: 400px;
 }
-.columna-2 h3{
+
+.columna-2 h3 {
     font-size: 22px;
     font-weight: bold;
     color: rgb(255, 255, 255);
 }
-.fila{
+
+.fila {
     margin-top: 20px;
     display: flex;
 }
-.fila p{
+
+.fila p {
     margin-top: 10px;
     margin-left: 20px;
     margin-bottom: 0%;
 }
-.columna-3{
-    max-width: 400px;   
+
+.columna-3 {
+    max-width: 400px;
 }
-.columna-3 h3{
+
+.columna-3 h3 {
     font-size: 22px;
     font-weight: bold;
     color: rgb(255, 255, 255);
 }
+
 .fila-2 {
     margin-top: 20px;
     display: flex;
 }
-.fila-2 p{
+
+.fila-2 p {
     max-width: 150px;
     margin-top: 10px;
     margin-left: 20px;
     margin-bottom: 0%;
 }
-.contenedor-pie{
+
+.contenedor-pie {
     width: 100%;
     max-width: 1600px;
-    background:  #000000;
-    display: flex;   
+    background: #000000;
+    display: flex;
 }
-.pie{
+
+.pie {
     width: 100%;
     max-width: 1400px;
     margin: 0;
     display: flex;
     justify-content: space-between;
-    padding: 10px;  
+    padding: 10px;
 }
-.pie p{
-    margin-bottom: 0%;   
+
+.pie p {
+    margin-bottom: 0%;
 }
-.mail{
+
+.mail {
     font-size: 11px;
 }

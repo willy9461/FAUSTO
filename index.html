@@ -20,6 +20,7 @@
 </head>
 
 <body id="body">
+  <!--barra de navegacion -->
   <header class="nav-contenedor">
     <nav class="div-nav">
       <h1>FAUSTO CERVECERÍA</h1>
@@ -33,6 +34,7 @@
         </ul>
       </div>
       <div>
+        <!--botones de la barra-->
         <button class="btn-carrito">
           <img class="navbar-icon" id="btn-carrito" src="/img/carrito-de-compras.png" alt="icono de carrito">
           <span id="contador-carrito">0</span>
@@ -41,6 +43,7 @@
           <img class="icon-menu-hamb" id="btn-carrito" src="/img/menu.png" alt="menu hamburgesa">
         </button>
       </div>
+      <!--modal del carrito de compras -->
       <div class="modal-carrito-contenedor" id="modal-carrito-contenedor">
         <div class="modal-carrito">
           <button class="cerrar-carrito" id="cerrar-carrito">x</button>
@@ -59,9 +62,7 @@
     <section class="home" id="home">
       <div class="flex-center">
         <div id="fondo_home" class="flex-center">
-          <div>
-            <h1 class="titulo_seccion"></h1>
-          </div>
+         
           <!--carousel -->
           <div class="carousel-contenedor">
             <div class="carousel" id="carousel">
@@ -80,15 +81,13 @@
             </div>
             <!--botones de carousel-->
             <div class="btn-carousel btn-derecho" id="btn-derecho">></div>
-            <div class="btn-carousel btn-izquierdo" id="btn-izquierdo">
-              
-            </div>
+            <div class="btn-carousel btn-izquierdo" id="btn-izquierdo"><</div>
           </div>
     </section>
     <section class="productos" id="productos">
-      <div class="flex-center">
+      <div class="contenedor-nuestros_productos">
         <div id="fondo_productos">
-          <h1 class="titulo_seccion">NUESTROS PRODUCTOS</h1>
+          <h1 class="titulo_productos">NUESTROS PRODUCTOS</h1>
           <div class="menu-productos">
             <button class="btn-menu btn-para-picar" id="btn_para_picar">
               <img class="img-menu-productos" src="/img/productos/papas-fritas.png" alt="">
@@ -111,6 +110,7 @@
               <h5>Bebidas</h5>
             </button>
           </div>
+          <!--Aca se cargan los productos-->
           <div class="contenedor-de-productos" id="contenedor_productos"></div>
         </div>
       </div>
@@ -242,7 +242,7 @@
           </div>
           <div class="fila-2">
             <img src="img/footer/correo.png" class="iconos-datos" alt="">
-            <p class="mail">fausto.cerveceriaartesanal@gmail.com</p>
+            <p class="mail">fausto.cerveceriaartesanal<br>@gmail.com</p>
           </div>
 
         </div>

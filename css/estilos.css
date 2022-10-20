@@ -47,22 +47,25 @@ nav {
 }
 
 .flex-center {
-    padding: 10px;
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: top;
+    
 
 }
-
+.contenedor-nuestros_productos{
+    padding-top: 20px;
+}
 #fondo_home {
     padding-top: 7%;
     width: 100%;
-    height: 800px;
+    height: 680px;
     background: #81ecec;
     background-size: cover;
     background-position: center;
     display: inline-block;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(91, 91, 91, 1) 100%);
+    background:  black;
 
 }
 
@@ -76,11 +79,11 @@ nav {
 
 #fondo_productos {
     width: 100%;
-    height: 800px;
-    background: #fd79a8;
+    height: 950px;
+    
     background-size: cover;
     background-position: center;
-    padding: 10px;
+    padding: 20px;
     box-sizing: border-box;
     background-image: url(/img/fondos/canillas.jpg);
 }
@@ -92,44 +95,78 @@ nav {
     bottom: 90%;
     justify-content: center;
     align-items: top;
+    padding: 20px;
 }
 
 #fondo_precios {
     width: 100%;
-    height: 720px;
+    height: 500px;
     background: #ffeaa7;
     background-size: cover;
     background-position: center;
-    padding: 10px;
-    background-image: url(/img/hamburguesa\ 2.jpg);
+    padding: 0px;
+    
 }
+
+
+
+.imagen_fondo{
+    
+    background-image: url(/img/fondo\ precios.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    max-width:100%; 
+    height: 875px;; 
+    text-align: right;
+    padding-top: 80px;
+    padding-right: 210px;
+    object-fit: cover;
+}
+.boton{
+    background-color: #fafafa;;
+    border: none;
+    padding: 15px;
+    border-style: outset;
+}
+
+
+
+
 #fondo_nosotros{
     width: 100%;
-    height: 800px;
-    background: #f49d3a;
+    height: 1000px;
+    
     background-image: url(/img/fondos/local.webp);
     background-size: cover;
     background-position: center;
-    padding: 10px;
+    padding: 200px;
 }
 
 #fondo_contacto {
     width: 100%;
-    height: 500px;
-    background: #fd79a8;
+    height: 600px;
+    
     background-size: cover;
     background-position: center;
     padding: 10px;
     box-sizing: border-box;
     background-image: url(/img/fondos/canillas.jpg)
 }
-
+.titulo_productos {
+    text-align: center;
+    align-items: center;
+    font-weight: bold;
+    color: white;
+  
+}
 .titulo_seccion {
     text-align: center;
     align-items: center;
     font-weight: bold;
-    padding-top: 50px;
-    margin-top: 50px;
+    color: white;
+    padding-top: 40px;
+    margin: 20px;
 }
 
 
@@ -215,7 +252,7 @@ p {
 /*contenedor de carts de productos*/
 .contenedor-de-productos {
     display: flex;
-    height: auto;
+    height: 1200px;
     justify-content: space-around;
 }
 
@@ -338,7 +375,7 @@ p {
 /*estilos de carousel*/
 .carousel-contenedor {
     width: 100%;
-    max-width: 1400px;
+    max-width: 1600px;
     margin: auto;
     overflow: hidden;
     position: relative;
@@ -512,7 +549,6 @@ footer {
 .pie p {
     margin-bottom: 0%;
 }
-<<<<<<< HEAD
 .mail{
-    font-size: 12px;
-=======
+    font-size: 16px;
+}

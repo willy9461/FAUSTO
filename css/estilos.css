@@ -297,7 +297,7 @@ p {
 
 .modal-carrito {
     width: 60%;
-    background-color: white;
+    background-color: rgb(128, 127, 127);;
     float: right;
     padding: 25px;
     max-width: 60%;

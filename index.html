@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FAUSTO</title>
-  <link rel="icon" href="/img/icono (1).png">
+  <link rel="icon" href="/img/icono.jpg">
   <script src="https://kit.fontawesome.com/23b464fd77.js" crossorigin="anonymous"></script>
   <!-- Sweetalert -->
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.33/dist/sweetalert2.all.min.js"></script>
@@ -47,13 +47,15 @@
       <div class="modal-carrito-contenedor" id="modal-carrito-contenedor">
         <div class="modal-carrito">
           <button class="cerrar-carrito" id="cerrar-carrito">x</button>
-          <h1>Carrito</h1>
+          <h2 class="titulo-carrito">Carrito</h2>
           <div id="carrito-contenedor">
           </div>
           <p class="precio-producto">Total: $<span id="precio-total">0</span></p>
-          <button id="vaciar-carrito" class="btn-vaciar">Vaciar Carrito<i
-              class="fa-solid fa-cart-shopping"></i></button>
-          <button id="pagar-carrito" class="btn-pagar">Pagar</button>
+          <div class="botonera-carrito">
+            <button id="vaciar-carrito" class="btn-vaciar">Vaciar Carrito</button>
+            <button id="pagar-carrito" class="btn-pagar">Pagar</button>
+          </div>
+          
         </div>
       </div>
     </nav>
@@ -85,33 +87,47 @@
           </div>
     </section>
     <section class="productos" id="productos">
-      <div class="contenedor-nuestros_productos">
+      <div class="contenedor-nuestros_productos ">
         <div id="fondo_productos">
           <h1 class="titulo_productos">NUESTROS PRODUCTOS</h1>
           <div class="menu-productos">
-            <button class="btn-menu btn-para-picar" id="btn_para_picar">
-              <img class="img-menu-productos" src="/img/productos/papas-fritas.png" alt="">
-              <h5>Para Picar</h5>
-            </button>
-            <button class="btn-menu btn-panchos" id="btn_panchos">
-              <img class="img-menu-productos" src="/img/productos/pancho.png" alt="">
-              <h5>Panchos</h5>
-            </button>
-            <button class="btn-menu btn-milanesas" id="btn_milanesas">
-              <img class="img-menu-productos" src="/img/productos/milanesa (1).png" alt="">
-              <h5>Milanesas</h5>
-            </button>
-            <button class="btn-menu btn-hamburgesas" id="btn_hamburgesas">
-              <img class="img-menu-productos" src="/img/productos/hamburguesa.png" alt="">
-              <h5>Hamburguesas</h5>
-            </button>
-            <button class="btn-menu btn-bebidas" id="btn_bebidas">
-              <img class="img-menu-productos" src="/img/productos/refresco.png" alt="">
-              <h5>Bebidas</h5>
-            </button>
+            <div>
+              <button class="btn-menu btn-para-picar" id="btn_para_picar"onclick="filtrar(3)">
+                <img class="img-menu-productos" src="/img/productos/papas-fritas.png" alt="">
+                <h5>Para Picar</h5>
+              </button>
+            </div>
+            <div>
+              <button class="btn-menu btn-panchos" id="btn_panchos"onclick="filtrar(2)">
+                <img class="img-menu-productos" src="/img/productos/pancho.png" alt="">
+                <h5>Panchos</h5>
+              </button>
+            </div>
+            <div>
+              <button class="btn-menu btn-milanesas" id="btn_milanesas"onclick="filtrar(4)">
+                <img class="img-menu-productos" src="/img/productos/milanesa (1).png" alt="">
+                <h5>Milanesas</h5>
+              </button>
+            </div>
+            <div>
+              <button class="btn-menu btn-hamburgesas" id="btn_hamburgesas"onclick="filtrar(1)">
+                <img class="img-menu-productos" src="/img/productos/hamburguesa.png" alt="">
+                <h5>Hamburguesas</h5>
+              </button>
+            </div>
+            <div>
+              <button class="btn-menu btn-bebidas" id="btn_bebidas"onclick="filtrar(5)">
+                <img class="img-menu-productos" src="/img/productos/refresco.png" alt="">
+                <h5>Bebidas</h5>
+              </button>
+            </div> 
+
+            <div></div>
           </div>
           <!--Aca se cargan los productos-->
-          <div class="contenedor-de-productos" id="contenedor_productos"></div>
+          <div class="container-fluid">
+            <div class="contenedor-de-productos row" id="contenedor_productos"></div>
+          </div>
         </div>
       </div>
     </section>
@@ -259,11 +275,12 @@
   </footer>
   <!--bootstrap-->
   <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
-
+  <a href="/Js/db.json"></a>
   <!--Toastify-->
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
   <script src="/Js/carousel.js"></script>
-  <script src="/Js/carrito.js"></script>
+  
+  <script src="/Js/menu_productos.js"></script>
 </body>
 
 </html>

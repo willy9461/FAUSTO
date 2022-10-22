@@ -1,0 +1,155 @@
+{
+    "productos": [
+        {
+            "imagen": "/img/productos/img-productos/hamburguesa-bajonera.jpeg",
+            "nombre": "Bajonera",
+            "descripcion":"Cuadruple carne-triple dambo-doble jamon-bacon-huevo frito-alioli",
+            "precio": 2490,
+            "id":1,
+            "id_categoria":1,
+            "cantidad":1,
+            "destacado":0            
+        },
+        {
+            "imagen": "/img/productos/img-productos/hamburguesa-taparterias.jpeg",
+            "nombre": "Taparterias",
+            "descripcion":"triple carne-triple dambo-bacon-montaña de papas fritas-baño de chedar-bacon picado",
+            "precio": 2360,
+            "id":2,
+            "id_categoria":1,
+            "cantidad":1,
+            "destacado":0             
+        },
+        {
+            "imagen": "/img/productos/img-productos/hamburguesa-palta-burger.jpeg",
+            "nombre": "Palta Burger",
+            "descripcion":"doble carne-doble chedar-bacon-mayonesa de palta",
+            "precio": 1870,
+            "id":3,
+            "id_categoria":1,
+            "cantidad":1,
+            "destacado":1             
+        },
+        {
+            "imagen": "/img/productos/img-productos/pancho-morty.PNG",
+            "nombre": "Morty",
+            "descripcion":"Salchicha alemana, envuelta en bacon, cebolla frita, verdeo.",
+            "precio": 1480,
+            "id":4,
+            "id_categoria":2,
+            "cantidad":1,
+            "destacado":0             
+        },
+        {
+            "imagen": "/img/productos/img-productos/pancho-summer.PNG",
+            "nombre": "Summer",
+            "descripcion":"Salchicha alemana, baño de parmesano, jamón en tiras y papas pay.",
+            "precio": 1390,
+            "id":5,
+            "id_categoria":2,
+            "cantidad":1,
+            "destacado":0             
+        },
+        {
+            "imagen": "/img/productos/img-productos/pancho-jerry.PNG",
+            "nombre": "Jerry",
+            "descripcion":"Salchicha alemana, mayonesa, mostaza.",
+            "precio": 1440,
+            "id":6,
+            "id_categoria":2,
+            "cantidad":1,
+            "destacado":0             
+        },
+        {
+            "imagen": "/img/productos/img-productos/papas-rusticas.PNG",
+            "nombre": "Papas",
+            "descripcion":"Papas Rusticas",
+            "precio": 930,
+            "id":8,
+            "id_categoria":3,
+            "cantidad":1,
+            "destacado":0             
+        },
+        {
+            "imagen": "/img/productos/img-productos/papas-a caballo.PNG",
+            "nombre": "Papas a caballo",
+            "descripcion":"Papas Rusticas a caballo",
+            "precio": 1080,
+            "id":9,
+            "id_categoria":3,
+            "cantidad":1,
+            "destacado":0             
+        },
+        {
+            "imagen": "/img/productos/img-productos/papas-mega.PNG",
+            "nombre": "Papas Mega",
+            "descripcion":"Papas Rusticas con cheddar, panceta y verdeo",
+            "precio": 1800,
+            "id":11,
+            "id_categoria":3,
+            "cantidad":1,
+            "destacado":1             
+        },
+        {
+            "imagen": "/img/productos/img-productos/mila-provo-letal.PNG",
+            "nombre": "Provo/Letal",
+            "descripcion":"Milanesa de ternera/pechuga de pollo colchon de papas, milanesa cubierta de provolone, jamón, rúcula y tomate.",
+            "precio": 5530,
+            "id":12,
+            "id_categoria":4,
+            "cantidad":1,
+            "destacado":0            
+        },
+        {
+            "imagen": "/img/productos/img-productos/mila-irlandesa.PNG",
+            "nombre": "Irlandesa",
+            "descripcion":"Milanesa de ternera / pechuga de pollo, salsa parmesano, papas fritas + salsa de parmesano, lluvia de bacon y 2 huevos fritos.",
+            "precio": 4960,
+            "id":14,
+            "id_categoria":4,
+            "cantidad":1,
+            "destacado":1             
+        },
+        {
+            "imagen": "/img/productos/img-productos/mila-macquianesa.PNG",
+            "nombre": "Macquianesa",
+            "descripcion":"Milanesa de ternera / pechuga de pollo, bañada en mac & cheese, lluvia de bacon y ciboulette.",
+            "precio": 4590,
+            "id":15,
+            "id_categoria":4,
+            "cantidad":1,
+            "destacado":0             
+        },
+        {
+            "imagen": "/img/productos/img-productos/bebida-agua.PNG",
+            "nombre": "Agua",
+            "descripcion":"",
+            "precio": 340,
+            "id":17,
+            "id_categoria":5,
+            "cantidad":1,
+            "destacado":0             
+        },        
+        {
+            "imagen": "/img/productos/img-productos/bebida-coca-cola.jpg",
+            "nombre": "Coca Cola",
+            "descripcion":"",
+            "precio": 380,
+            "id":18,
+            "id_categoria":5,
+            "cantidad":1,
+            "destacado":0             
+        },
+        {
+            "imagen": "/img/productos/img-productos/bebida-sprite.jpg",
+            "nombre": "Sprite",
+            "descripcion":"",
+            "precio": 380,
+            "id":19,
+            "id_categoria":5,
+            "cantidad":1,
+            "destacado":0                         
+        }
+    ]
+
+}

@@ -5,6 +5,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
   <title>FAUSTO</title>
   <link rel="icon" href="/img/icono.jpg">
   <script src="https://kit.fontawesome.com/23b464fd77.js" crossorigin="anonymous"></script>
@@ -55,7 +58,7 @@
             <button id="vaciar-carrito" class="btn-vaciar">Vaciar Carrito</button>
             <button id="pagar-carrito" class="btn-pagar">Pagar</button>
           </div>
-          
+
         </div>
       </div>
     </nav>
@@ -64,7 +67,7 @@
     <section class="home" id="home">
       <div class="flex-center">
         <div id="fondo_home" class="flex-center">
-         
+
           <!--carousel -->
           <div class="carousel-contenedor">
             <div class="carousel" id="carousel">
@@ -83,8 +86,9 @@
             </div>
             <!--botones de carousel-->
             <div class="btn-carousel btn-derecho" id="btn-derecho">></div>
-            <div class="btn-carousel btn-izquierdo" id="btn-izquierdo"><</div>
-          </div>
+            <div class="btn-carousel btn-izquierdo" id="btn-izquierdo">
+              << /div>
+            </div>
     </section>
     <section class="productos" id="productos">
       <div class="contenedor-nuestros_productos ">
@@ -92,35 +96,35 @@
           <h1 class="titulo_productos">NUESTROS PRODUCTOS</h1>
           <div class="menu-productos">
             <div>
-              <button class="btn-menu btn-para-picar" id="btn_para_picar"onclick="filtrar(3)">
+              <button class="btn-menu btn-para-picar" id="btn_para_picar" onclick="filtrar(3)">
                 <img class="img-menu-productos" src="/img/productos/papas-fritas.png" alt="icono para picar">
                 <h5>Para Picar</h5>
               </button>
             </div>
             <div>
-              <button class="btn-menu btn-panchos" id="btn_panchos"onclick="filtrar(2)">
+              <button class="btn-menu btn-panchos" id="btn_panchos" onclick="filtrar(2)">
                 <img class="img-menu-productos" src="/img/productos/pancho.png" alt="icono pancho">
                 <h5>Panchos</h5>
               </button>
             </div>
             <div>
-              <button class="btn-menu btn-milanesas" id="btn_milanesas"onclick="filtrar(4)">
+              <button class="btn-menu btn-milanesas" id="btn_milanesas" onclick="filtrar(4)">
                 <img class="img-menu-productos" src="/img/productos/milanesa (1).png" alt="icono milanesa">
                 <h5>Milanesas</h5>
               </button>
             </div>
             <div>
-              <button class="btn-menu btn-hamburgesas" id="btn_hamburgesas"onclick="filtrar(1)">
+              <button class="btn-menu btn-hamburgesas" id="btn_hamburgesas" onclick="filtrar(1)">
                 <img class="img-menu-productos" src="/img/productos/hamburguesa.png" alt="icono hamburguesa">
                 <h5>Hamburguesas</h5>
               </button>
             </div>
             <div>
-              <button class="btn-menu btn-bebidas" id="btn_bebidas"onclick="filtrar(5)">
+              <button class="btn-menu btn-bebidas" id="btn_bebidas" onclick="filtrar(5)">
                 <img class="img-menu-productos" src="/img/productos/refresco.png" alt="icono bebidas">
                 <h5>Bebidas</h5>
               </button>
-            </div> 
+            </div>
 
             <div></div>
           </div>
@@ -140,7 +144,7 @@
               <button class="boton"> <a href="https://fausto.alacarta.online/">Menú</a></button>
             </div>
           </div>
-        
+
         </div>
       </div>
     </section>
@@ -156,7 +160,8 @@
             .
           </p>
           <div id="mapa">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3284.9811715801034!2d-58.423084308753964!3d-34.57934296691411!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf723b0b27e728d23!2sFausto!5e0!3m2!1ses!2sar!4v1666139885767!5m2!1ses!2sar"
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3284.9811715801034!2d-58.423084308753964!3d-34.57934296691411!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf723b0b27e728d23!2sFausto!5e0!3m2!1ses!2sar!4v1666139885767!5m2!1ses!2sar"
               width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
@@ -191,7 +196,7 @@
                   placeholder="nombre@ejemplo.com">
                 <div id="emailHelp" class="form-text">Nunca compartiremos su correo electrónico con nadie más.</div>
               </div>
-              
+
 
 
               <div class="form-floating">
@@ -201,7 +206,7 @@
               </div>
 
               <div class="col-12">
-                <button class="btn btn-primary" id="btn-formulario"type="submit">Enviar</button>
+                <button class="btn btn-primary" id="btn-formulario" type="submit">Enviar</button>
               </div>
             </form>
           </div>

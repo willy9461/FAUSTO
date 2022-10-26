@@ -119,7 +119,7 @@ function actualizar_carrito(){
         const div=document.createElement('div');
         div.className="fila-carrito"
         div.innerHTML=`
-        <img src="${prod.imagen}" alt="" width=40px height=40px>
+        <img src="${prod.imagen}" alt="imagen del producto" width=40px height=40px>
         <p>${prod.nombre}</p>
         <p> Cantidad: ${prod.cantidad}</p>
         <p>Precio: $${prod.precio}</p>

@@ -93,31 +93,31 @@
           <div class="menu-productos">
             <div>
               <button class="btn-menu btn-para-picar" id="btn_para_picar"onclick="filtrar(3)">
-                <img class="img-menu-productos" src="/img/productos/papas-fritas.png" alt="">
+                <img class="img-menu-productos" src="/img/productos/papas-fritas.png" alt="icono para picar">
                 <h5>Para Picar</h5>
               </button>
             </div>
             <div>
               <button class="btn-menu btn-panchos" id="btn_panchos"onclick="filtrar(2)">
-                <img class="img-menu-productos" src="/img/productos/pancho.png" alt="">
+                <img class="img-menu-productos" src="/img/productos/pancho.png" alt="icono pancho">
                 <h5>Panchos</h5>
               </button>
             </div>
             <div>
               <button class="btn-menu btn-milanesas" id="btn_milanesas"onclick="filtrar(4)">
-                <img class="img-menu-productos" src="/img/productos/milanesa (1).png" alt="">
+                <img class="img-menu-productos" src="/img/productos/milanesa (1).png" alt="icono milanesa">
                 <h5>Milanesas</h5>
               </button>
             </div>
             <div>
               <button class="btn-menu btn-hamburgesas" id="btn_hamburgesas"onclick="filtrar(1)">
-                <img class="img-menu-productos" src="/img/productos/hamburguesa.png" alt="">
+                <img class="img-menu-productos" src="/img/productos/hamburguesa.png" alt="icono hamburguesa">
                 <h5>Hamburguesas</h5>
               </button>
             </div>
             <div>
               <button class="btn-menu btn-bebidas" id="btn_bebidas"onclick="filtrar(5)">
-                <img class="img-menu-productos" src="/img/productos/refresco.png" alt="">
+                <img class="img-menu-productos" src="/img/productos/refresco.png" alt="icono bebidas">
                 <h5>Bebidas</h5>
               </button>
             </div> 
@@ -172,26 +172,18 @@
             <form class="row g-3 needs-validation" novalidate>
               <div class="col-md-3 position-relative">
                 <label for="validationTooltip01" class="form-label">Nombre</label>
-                <input type="text" class="form-control" id="validationTooltip01" placeholder="Ingrese Nombre" required>
-                <div class="valid-tooltip">
-                  Looks good!
-                </div>
+                <input type="text" class="form-control" id="validationTooltip01" placeholder="Ingrese Nombre">
+                <div class="valid-tooltip form-text"></div>
               </div>
               <div class="col-md-3 position-relative">
                 <label for="validationTooltip02" class="form-label">Apellido</label>
-                <input type="text" class="form-control" id="validationTooltip02" placeholder="Ingrese Apellido"
-                  required>
-                <div class="valid-tooltip">
-                  Looks good!
-                </div>
+                <input type="text" class="form-control" id="validationTooltip02" placeholder="Ingrese Apellido">
+                <div class="valid-tooltip form-text"></div>
               </div>
               <div class="col-md-3 position-relative">
                 <label for="validationTooltip02" class="form-label">Telefono</label>
-                <input type="text" class="form-control" id="validationTooltip02" placeholder="Ingrese telefono"
-                  required>
-                <div class="valid-tooltip">
-                  Looks good!
-                </div>
+                <input type="text" class="form-control" id="validationTooltip02" placeholder="Ingrese telefono">
+                <div class="valid-tooltip"></div>
               </div>
               <div class="col-md-6">
                 <label for="exampleInputEmail1" class="form-label">Email</label>
@@ -199,6 +191,7 @@
                   placeholder="nombre@ejemplo.com">
                 <div id="emailHelp" class="form-text">Nunca compartiremos su correo electrónico con nadie más.</div>
               </div>
+              
 
 
               <div class="form-floating">
@@ -208,7 +201,7 @@
               </div>
 
               <div class="col-12">
-                <button class="btn btn-primary" type="submit">Enviar</button>
+                <button class="btn btn-primary" id="btn-formulario"type="submit">Enviar</button>
               </div>
             </form>
           </div>
@@ -279,8 +272,8 @@
   <!--Toastify-->
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
   <script src="/Js/carousel.js"></script>
-  
   <script src="/Js/menu_productos.js"></script>
+  <script src="/Js/formulario.js"></script>
 </body>
 
 </html>

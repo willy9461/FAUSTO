@@ -348,6 +348,10 @@ p {
     background-color: rgba(0, 0, 0, 0.2);
     z-index: 10;
     opacity: 50;
+    
+}
+.modal-carrito{
+    overflow: auto;
 }
 .precio-producto{
     font-size: 30px;
@@ -363,7 +367,7 @@ p {
 }
 .modal-carrito {
     width: 60%;
-    background-color:rgba(248, 188, 201, 0.84);
+    background-color:rgba(235, 221, 224, 0.74);
     float: right;
     padding: 25px;
     max-width: 60%;

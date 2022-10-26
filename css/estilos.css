@@ -167,6 +167,7 @@ nav {
     align-items: center;
     font-weight: bold;
     color: white;
+    text-shadow: 2px 2px 4px #000000;
     padding-top: 40px;
     margin: 20px;
 }
@@ -180,6 +181,7 @@ p {
 
 .nosotros {
     color: white;
+    text-shadow: 2px 2px 4px #000000, 0 0 5px #000000;
 }
 
 /*iconos del menu*/
@@ -271,8 +273,7 @@ p {
     border-radius: 10px;
     margin: 10px;
     padding: 10px;
-    background-color:rgba(245, 81, 117, 0.74);
-    
+    background-color: rgba(235, 221, 224, 0.74);    
 } 
 .cart-img {
     width: 100%;
